@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fff7;
+    color: #2e8b57;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .banner {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .banner h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  
+  .banner p {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 0;
+    opacity: 0.85;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .galeria h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  
+  .item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.15);
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(46, 139, 87, 0.35);
+  }
+  
+  .item img {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #2e8b57;
+    margin-bottom: 1rem;
+  }
+  
+  .item h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    color: #20633e;
+  }
+  
+  .item p {
+    font-size: 0.9rem;
+    color: #3a5a40;
+    font-weight: 400;
+  }
+  
+  .rodape {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .imagens {
+      gap: 1.5rem;
+    }
+  
+    .item {
+      width: 140px;
+      padding: 0.8rem;
+    }
+  
+    .item img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner h1 {
+      font-size: 2rem;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  
+    .galeria h2 {
+      font-size: 1.5rem;
+    }
+  
+    .item {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
